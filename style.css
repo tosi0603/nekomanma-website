@@ -1,0 +1,109 @@
+:root{--yellow:#FCD037;--coral:#E9503A;--black:#242424;--white:#fff;--red:#B93625;--container:1296px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;background:var(--yellow);color:var(--black);font-family:"Noto Sans JP",sans-serif;font-size:16px;font-weight:600;line-height:1.8;overflow-x:hidden}
+a{color:inherit}
+a:focus-visible{outline:3px solid #0a6472;outline-offset:3px}
+.skip{position:absolute;left:-1000px;z-index:100;top:8px;background:#fff;padding:.7rem}
+.skip:focus{left:8px}
+.container{width:min(calc(100% - 144px),var(--container));margin-inline:auto}
+.yellow{background:var(--yellow)}.coral{background:var(--coral)}.white{background:var(--white)}
+h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Dela Gothic One","Noto Sans JP",sans-serif;font-weight:400;line-height:1.45}
+h2{font-size:clamp(32px,3.4vw,48px);letter-spacing:-.04em;margin-bottom:28px}
+h3{font-size:25px}
+p{margin-bottom:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:11px 24px;border:1.5px solid var(--black);border-radius:100px;font-size:14px;line-height:1.4;text-decoration:none;font-weight:800;white-space:nowrap;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--black);color:var(--white)}.btn-light{background:var(--white);color:var(--black)}
+.action-buttons{display:flex;gap:10px}.action-buttons .btn{flex:1}
+.site-header{background:var(--yellow);border-bottom:2px solid var(--coral)}
+.header-inner{min-height:184px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1.25;white-space:nowrap}
+.brand-main{font-family:"Dela Gothic One",sans-serif;font-size:clamp(44px,5.6vw,84px);letter-spacing:-.055em;color:var(--red)}
+.brand-sub{font-size:13px;letter-spacing:.4em;font-weight:700;margin-top:6px}
+.primary-nav{display:flex;align-items:center;gap:42px;font-size:14px;font-weight:900}
+.primary-nav a{text-decoration:none;transition:opacity .2s}.primary-nav a:hover{opacity:.6}
+.hero{padding:32px 0 36px}.hero-row{display:flex;align-items:center;justify-content:space-between;gap:48px;min-height:420px}
+.hero-content{flex:1;min-width:0}.station{width:max-content;border-bottom:1px solid var(--black);padding-bottom:8px;font-size:15px;line-height:1.3;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(46px,5.15vw,74px);letter-spacing:-.04em;margin-bottom:22px}
+.hero-subtitle{font-size:16px;font-weight:600}.mobile-line{display:none}
+.hero-glass{width:min(26vw,253px);height:auto;max-height:403px;object-fit:contain;flex-shrink:0;margin-right:40px}
+.hero-offer{background:var(--white);padding:20px 32px;min-height:134px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.eyebrow,.offer-note{display:block;font-size:14px;font-weight:800}.offer-price{display:flex;gap:10px;align-items:center;line-height:1}
+.offer-price strong{font-family:"Barlow Condensed",sans-serif;font-size:65px;letter-spacing:-.02em}
+.offer-price span{font-size:12px;font-weight:800}.offer-actions{display:flex;align-items:center;gap:30px}
+.offer-actions .action-buttons{flex-direction:column;width:240px;gap:7px}.offer-actions .btn{min-height:37px;padding:7px 20px;font-size:12px}
+.open-hours{font-size:12px;font-weight:600;white-space:nowrap}
+.about{padding:68px 0 74px}.about-inner{text-align:center}.about h2{color:var(--white);margin-bottom:24px}
+.about-copy{font-size:16px;line-height:2.4}.about-copy p+p{margin-top:5px}
+.plans{padding:64px 0 50px}.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:38px}
+.plan{border-top:3px solid var(--black);padding-top:18px}.plan h3{font-family:"Barlow Condensed","Noto Sans JP",sans-serif;font-size:32px;font-weight:800;letter-spacing:.01em;margin:0 0 7px}
+.plan-length{font-size:16px;font-weight:800}.plan-price{display:flex;align-items:baseline;gap:12px;line-height:1.1;margin:16px 0 14px}
+.plan-price strong{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(65px,5.7vw,85px)}.plan-price span{font-size:13px;font-weight:800}
+.plan-summary{min-height:72px;font-size:14px;line-height:1.7}.extension{padding:12px 0;border-top:2px solid var(--black);border-bottom:1px solid var(--black);font-size:14px;font-weight:800}
+.plan-notes{background:#fff;padding:22px;margin-top:22px;font-size:14px;line-height:2.2;font-weight:700}
+.drinks{padding:64px 0 60px}.drinks h2,.info h2{color:var(--coral)}
+.drinks-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:24px}
+.drink-set{border-top:2px solid var(--coral);padding-top:20px;padding-bottom:26px;border-bottom:1px solid #f6b3a8}
+.drink-set h3{font-family:"Barlow Condensed",sans-serif;color:var(--coral);font-size:32px;font-weight:800;margin:0 0 8px}
+.drink-sub{font-size:14px;font-weight:800;margin-bottom:12px}.drink-set p:last-child{font-size:15px;line-height:2}
+.extra-drinks{padding-top:24px;font-size:14px;line-height:2}.extra-drinks h3{font-size:24px;color:var(--coral);margin-bottom:8px}.extra-drinks p+p{margin-top:10px}
+.scenes{padding:58px 0 62px;color:#fff}.scenes h2{margin-bottom:32px}
+.scene-line{border-top:1px solid rgba(255,255,255,.7);font-family:"Dela Gothic One",sans-serif;font-size:clamp(26px,2.6vw,38px);padding:20px 0;text-align:center;line-height:1.5}
+.scene-line:last-child{border-bottom:1px solid rgba(255,255,255,.7)}
+.access{padding:60px 0 64px}.access h2{font-size:clamp(32px,3.45vw,48px);margin-bottom:22px}
+.access-meta{display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:22px;margin-bottom:20px;font-size:14px;font-weight:800}
+.map-btn{font-size:13px;min-width:250px}.map-wrap{height:310px;border:2px solid var(--black);background:#fff;overflow:hidden}
+.map-wrap iframe{border:0;width:100%;height:100%;display:block}
+.info{padding:64px 0 68px}.info-grid{margin:24px 0 0;display:grid;grid-template-columns:1fr 1fr;grid-auto-flow:row;column-gap:52px}
+.info-row{display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:start;border-bottom:1px solid var(--coral);padding:16px 0;font-size:14px}
+.info-row dt{font-weight:800}.info-row dd{margin:0;font-weight:600;overflow-wrap:anywhere}.info-row a{text-decoration:underline;text-underline-offset:3px}
+.footer{color:var(--white);padding:56px 0 60px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:60px}
+.footer-left{display:flex;flex-direction:column;align-items:flex-start;gap:12px}.footer-copy{font-family:"Dela Gothic One",sans-serif;font-size:clamp(36px,3vw,46px);line-height:1.5}
+.copyright{font-size:12px}.footer-right{width:310px;flex-shrink:0}.footer-right .action-buttons{flex-direction:column;gap:8px}.footer-right .btn{min-height:42px;padding:6px 20px}
+.footer-tel{display:block;color:#fff;font-family:"Barlow Condensed",sans-serif;font-size:38px;font-weight:800;text-decoration:none;margin:12px 0 6px;line-height:1.2}
+.footer-right p{font-size:13px;line-height:1.6}.mobile-sticky{display:none}
+@media(max-width:1050px) and (min-width:701px){
+ .container{width:calc(100% - 80px)}.header-inner{min-height:140px}.brand-main{font-size:55px}.hero-row{gap:18px}.hero-glass{margin-right:0;width:22vw}h1{font-size:clamp(40px,4.6vw,58px)}.offer-actions{gap:12px}.offer-actions .action-buttons{width:190px}.access-meta{grid-template-columns:1fr 1fr}.map-btn{grid-column:1/-1;justify-self:start}
+}
+@media(max-width:700px){
+ html{scroll-padding-top:10px}.container{width:calc(100% - 44px)}
+ h2{font-size:27px;line-height:1.5;letter-spacing:-.05em;margin-bottom:24px}
+ h3{font-size:20px}
+ .site-header{border-bottom:2px solid var(--coral)}
+ .header-inner{min-height:unset;padding:20px 0 16px;flex-direction:column;gap:18px}
+ .brand-main{font-size:clamp(39px,11.5vw,55px);letter-spacing:-.045em}.brand-sub{font-size:10px;letter-spacing:.32em;margin-top:4px}
+ .primary-nav{gap:35px;justify-content:center;width:100%;font-size:13px}
+ .hero{padding:28px 0 32px}.hero-row{display:block;min-height:unset;position:relative}
+ .station{font-size:13px;margin-bottom:19px}
+ h1{font-size:clamp(25px,8vw,32px);line-height:1.5;letter-spacing:-.035em;margin:0 0 15px}.desktop-line{display:none}.mobile-line{display:inline}
+ .hero-subtitle{font-size:14px;margin-bottom:20px}
+ .hero-glass{position:absolute;right:1px;bottom:-182px;width:83px;height:140px;margin:0;z-index:1}
+ .hero-offer{display:block;min-height:0;background:transparent;border-top:2px solid var(--black);padding:14px 0 0}
+ .offer-main{min-height:150px;max-width:calc(100% - 100px);display:flex;flex-direction:column;align-items:start;justify-content:center}
+ .eyebrow{font-size:13px}.offer-price{gap:5px}.offer-price strong{font-size:57px}.offer-price span{font-size:11px}.offer-note{font-size:11px}
+ .offer-actions{border-top:2px solid var(--black);padding-top:16px;display:block}
+ .offer-actions .action-buttons{flex-direction:row;width:100%;gap:9px}
+ .offer-actions .btn{min-height:43px;font-size:12px}.open-hours{margin-top:14px;font-size:12px}
+ .about{padding:28px 0 34px}.about-inner{text-align:left}.about h2{margin:0 0 22px;color:#fff}
+ .about-copy{font-size:13px;line-height:2.2}.about-copy p+p{margin-top:10px}
+ .plans{padding:30px 0 30px}.plan-grid{display:block;margin-top:24px}.plan+.plan{margin-top:28px}
+ .plan{padding-top:10px;border-top:2px solid var(--black)}.plan h3{font-size:25px}.plan-length{font-size:13px}.plan-price{margin:12px 0 9px}.plan-price strong{font-size:64px}.plan-price span{font-size:11px}
+ .plan-summary{min-height:0;font-size:13px;margin-bottom:12px}.extension{font-size:13px;padding:11px 0}
+ .plan-notes{padding:14px;margin-top:18px;font-size:12px;line-height:1.9}
+ .drinks{padding:32px 0 38px}.drinks-grid{display:block;margin-top:22px}.drink-set{padding:12px 0 25px}.drink-set+.drink-set{margin-top:12px}.drink-set h3{font-size:25px}
+ .drink-set p:last-child{font-size:13px}.drink-sub{font-size:12px}.extra-drinks{font-size:12px;line-height:1.9;padding-top:20px}.extra-drinks h3{font-size:17px}.desktop-only{display:none}
+ .scenes{padding:28px 0 32px}.scenes h2{margin-bottom:18px}.scene-line{text-align:left;font-size:19px;padding:20px 0;line-height:1.5}
+ .access{padding:30px 0 32px}.access h2{font-size:23px;line-height:1.65}.access-meta{display:block;font-size:12px}.access-meta p+p{margin-top:8px}.map-btn{margin-top:16px;display:flex;font-size:12px;width:100%;min-width:0}
+ .map-wrap{height:260px}
+ .info{padding:32px 0 35px}.info-grid{display:block;margin-top:18px}.info-row{grid-template-columns:98px 1fr;gap:12px;padding:13px 0;font-size:12px}
+ .footer{padding:34px 0 94px}.footer-inner{display:block}.footer-copy{font-size:23px}.copyright{display:none}
+ .footer-right{width:100%;margin-top:20px}.footer-right .action-buttons{flex-direction:row;gap:9px}.footer-right .btn{font-size:12px;min-height:42px}
+ .footer-tel{font-size:33px;margin-top:16px}.footer-right p{font-size:12px}.footer-right::after{content:"© ねこまんま";display:block;font-size:11px;margin-top:14px}
+ .mobile-sticky{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;gap:9px;background:var(--yellow);padding:10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));box-shadow:0 -2px 10px rgba(0,0,0,.1)}
+ .mobile-sticky .btn{flex:1;min-height:42px;font-size:12px;padding:8px 12px}
+}
+@media(max-width:350px){
+ .container{width:calc(100% - 32px)}.primary-nav{gap:27px}.brand-main{font-size:39px}h1{font-size:25px}.offer-price strong{font-size:51px}.hero-glass{right:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
